@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+	<head>
+		<script src="http://codeorigin.jquery.com/jquery-1.10.2.min.js" type="text/javascript"></script>
+		<script src="js/accordeon.js" type="text/javascript"></script>
+		<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+	</head>
+	<body>
+		
+		<div class="containerTabs">
+			<ul class="headers">
+				<li class="header">
+					<h2>Section 1</h2>
+				</li>
+				<li class="header">
+					<h2>Section 2</h2>
+				</li>
+				<li class="header">
+					<h2>Section 3</h2>
+				</li>
+			</ul>
+			<div class="holders">
+				<div class="holder">
+					<p>Section 1 Content</p>
+				</div>
+				<div class="holder">
+					<p>Section 2 Content</p>
+				</div>				
+				<div class="holder">
+					<p>Section 3 Content</p>
+				</div>
+			</div>
+		</div>
+		
+		<div class="containerAccordeon">
+			<h2 class="accordionHeader">Section 1</h2>
+			<div class="accordionHolder">
+				<p>Section 1 Content</p>
+			</div>
+
+			<h2 class="accordionHeader">Section 2</h2>
+			<div class="accordionHolder">
+				<p>Section 2 Content</p>
+			</div>
+
+			<h2 class="accordionHeader">Section 3</h2>
+			<div class="accordionHolder">
+				<p>Section 3 Content</p>
+			</div>
+		</div>
+		<div class="containerAccordeon">
+			<h2 class="accordionHeader">Section 1</h2>
+			<div class="accordionHolder">
+				<p>Section 1 Content</p>
+			</div>
+
+			<h2 class="accordionHeader">Section 2</h2>
+			<div class="accordionHolder">
+				<p>Section 2 Content</p>
+			</div>
+
+			<h2 class="accordionHeader">Section 3</h2>
+			<div class="accordionHolder">
+				<p>Section 3 Content</p>
+			</div>
+		</div>
+		
+		<script>
+			$(function(){
+				$('.containerAccordeon').each(function(){
+					$(this).tabMaker({
+						'openElement': '0'
+					});
+				});
+				
+				$('.containerTabs').tabMaker({
+					'openElement'		: '0',
+					'orientaion'		: 'horizontal',
+					'accordionHeader'	: '.header',
+					'accordionHolder'	: '.holder'
+				});
+			});
+		</script>
+	</body>
+</html>
