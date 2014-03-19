@@ -21,12 +21,12 @@
 		// plugin's default options
         // this is private property and is accessible only from inside the plugin
 		var defaults = {
-			'accordionHeader'	: '.accordionHeader',
-			'accordionHolder'	: '.accordionHolder',
-			'openContent' 		: 'openContent',
-			'inactiveHeader'	: 'closed',
-			'activeHeader'		: 'opened',
-			'orientaion' 				: 'vertival',
+			'accordionHeader'	: '.accordionHeader', //indenture class for section
+			'accordionHolder'	: '.accordionHolder', //indenture class for content
+			'openContent' 		: 'openContent', //class for active content
+			'inactiveHeader'	: 'closed', //class for inactive section
+			'activeHeader'		: 'opened', //class for active section
+			'orientaion' 		: 'vertical', //horizontal or vertical
 			'slideSpeed'		: 350,
 			'openElement'		: false,
 			'onClose'			: function(element) {
